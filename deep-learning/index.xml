@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Deep-learnings on A Hugo website</title>
+    <link>/deep-learning/</link>
+    <description>Recent content in Deep-learnings on A Hugo website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 07 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="/deep-learning/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>GANs with the Language of Game Theory</title>
+      <link>/deep-learning/gan-review/</link>
+      <pubDate>Fri, 07 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/deep-learning/gan-review/</guid>
+      <description>During my undergraduate Economics program, I took one game theory course. At that time, I couldn&amp;rsquo;t imagine that it would be applied to machine learning. I recently listened to one podcast and watched one talk of Ian Goodfellow (the inventor of GAN) and I was impressed when he explained the GANs in the language of game theory.
+What is the &amp;ldquo;Game&amp;rdquo; in the adversarial training? Players: The design of the architecture is like a two-player minimax game: one is a generator, one discriminator.</description>
+    </item>
+    
+    <item>
+      <title>Review: TensorFlow Certificate Program</title>
+      <link>/deep-learning/tensorflow-certificate-program/</link>
+      <pubDate>Fri, 07 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/deep-learning/tensorflow-certificate-program/</guid>
+      <description>I just received the TensorFlow Developer Certificate.
+It is a new program (announced in March 2020), and I think I am one of the early-holders of the certificate. Here are my impressions and expectations:
+Why Choosing TensorFlow Framework? To have hands-on experience in a deep learning framework, and I have chosen TensorFlow. It is for two reasons:
+In general, it is the most popular DL framework. It is mostly used in the industry than in academia.</description>
+    </item>
+    
+    <item>
+      <title>Visualizing Machine Learning Optimizers</title>
+      <link>/deep-learning/visualizing-ml-optimizers/</link>
+      <pubDate>Fri, 07 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/deep-learning/visualizing-ml-optimizers/</guid>
+      <description>Having a strong intuition about algorithms are helpful for hacking and quick prototyping. For me, the most useful tools for grasping good intuition are visualizations and analogies.
+The Deep Learning book has a comprehensive chapter on optimizers. I am currently reading it and practicing them by implementing them into code. I am sharing my visualizations here so that it might be helpful for other learners.
+Basic Optimization Algorithms What is an optimizer?</description>
+    </item>
+    
+    <item>
+      <title>Linear Regression with Gradient Descent</title>
+      <link>/deep-learning/2021-05-07-gradient-descent-visualization-with-ggplot2/</link>
+      <pubDate>Tue, 08 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/deep-learning/2021-05-07-gradient-descent-visualization-with-ggplot2/</guid>
+      <description>Linear Regression with Gradient Descent Solving a linear regression problem with Gradient Descent optimization algorithm to better understand learning…
+1. Notations and Definitions Assume the training set below: (a tibble in R)
+library(dplyr) as_tibble(cars) ## # A tibble: 50 x 2 ## speed dist ## &amp;lt;dbl&amp;gt; &amp;lt;dbl&amp;gt; ## 1 4 2 ## 2 4 10 ## 3 7 4 ## 4 7 22 ## 5 8 16 ## 6 9 10 ## 7 10 18 ## 8 10 26 ## 9 10 34 ## 10 11 17 ## # … with 40 more rows m : Number of training examples (or data points).</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.82.0" />
+
+
+<title>GANs with the Language of Game Theory - A Hugo website</title>
+<meta property="og:title" content="GANs with the Language of Game Theory - A Hugo website">
+
+
+  <link href='/favicon.ico' rel='icon' type='image/x-icon'/>
+
+
+
+  
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/css/fonts.css" media="all">
+<link rel="stylesheet" href="/css/main.css" media="all">
+
+
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="/" class="nav-logo">
+    <img src="/images/logo.png"
+         width="50"
+         height="50"
+         alt="Logo">
+  </a>
+
+  <ul class="nav-links">
+    
+    <li><a href="/about/">About</a></li>
+    
+    <li><a href="https://github.com/kocabiyik/">GitHub</a></li>
+    
+    <li><a href="https://www.linkedin.com/in/imrankocabiyik/">LinkedIn</a></li>
+    
+    <li><a href="https://stackoverflow.com/users/5070121/imran-kocabiyik">StackOverflow</a></li>
+    
+    <li><a href="https://twitter.com/imrankocabiyik">Twitter</a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+
+    <h1 class="article-title">GANs with the Language of Game Theory</h1>
+
+    
+
+    <div class="article-content">
+      <p>During my undergraduate Economics program, I took one game theory course. At that time, I couldn&rsquo;t imagine that it would be applied to machine learning. I recently listened to one podcast and watched one talk of Ian Goodfellow (the inventor of GAN) and I was impressed when he explained the GANs in the language of <strong>game theory</strong>.</p>
+<h2 id="what-is-the-game-in-the-adversarial-training">What is the &ldquo;Game&rdquo; in the adversarial training?</h2>
+<p>Players: The design of the architecture is like a two-player <strong>minimax game</strong>: one is a generator, one discriminator.</p>
+<p>One example game in the computer vision domain: The generator produces images (random pixels in its first try) and discriminator predicts whether the image is real or fake. There is an adversarial competition between them. The generator tries to fool the discriminator. Both the generator and the discriminator are trained simultaneously.</p>
+<p>End of the game: We hope that they reach a Nash equilibrium where the generator can no longer produce better images, and discriminator can do no better than random guessing. In this equilibrium, we come up with a model that can generate new samples from the distribution. In other words, it will create visually appealing and convincing results.</p>
+<h2 id="what-can-it-do">What can it do?</h2>
+<p>There are many types of GANs. It is especially popular in the computer vision domain. Some examples:</p>
+<ul>
+<li><a href="https://arxiv.org/abs/1609.04802">SRGAN</a> upscales low-resolution images</li>
+<li><a href="https://junyanz.github.io/CycleGAN/">CycleGAN</a> does domain transfer (ie: from drawing to photo-realistic images)</li>
+<li><a href="https://github.com/NVlabs/stylegan">StyleGAN</a> produces super-realistic portrait photos
+etc.</li>
+</ul>
+<p>Here is my attempt to create photorealistic portraits of Van Gogh by using CycleGAN.</p>
+<p><img src="https://ikocabiyik.com/media/blog_media/vg2.jpg" alt="Van Gogh"></p>
+<h2 id="what-else-can-it-do">What Else Can It Do?</h2>
+<p>Here are a few applications in different domains:</p>
+<h3 id="1-security">1. Security</h3>
+<p>A system that generates some sound, which is a just random noise for you but an executable command for your phone (Ian Goodfellow, the inventor of GANs, mentioned in the Artificial Intelligence Podcast). The attacker&rsquo;s model simply tries to minimize its error rate and maximize the error rate of your model.</p>
+<p>In general, most of the ML models assume that the inputs are attack-free (i.i.d. assumption), and they can easily be fooled with adversarial examples. So, they simply need defense mechanisms like relaxing identical and independent assumptions and some other solutions. (1)</p>
+<h3 id="2-simulating-training-data">2. Simulating Training Data</h3>
+<p>Assume that you need to train a model but getting input data is difficult or costly. You have a chance to generate them with 3D software but the output looks synthetic. GANs can make those synthetic inputs realistic. Below is an illustration from  Learning from Simulated and Unsupervised Images through Adversarial Training paper.</p>
+<p><img src="https://ikocabiyik.com/media/blog_media/synthetic-to-realistic.png" alt="Syntetic Data Generation"></p>
+<h3 id="3-extreme-reliability">3. Extreme Reliability</h3>
+<p>There are applications where 99 % accuracy is not good enough (assume a disaster with a probability of 1%). For such cases, GANs can serve as a stress testing mechanism.</p>
+<h2 id="summary">Summary</h2>
+<p>In most of the applications, the results are not perfect. However, the idea itself is very interesting. As someone interested in painting and arts, I am impressed when I saw some applications in image/photo processing. The idea impressed me the second time when I found some possible applications in other domains.</p>
+<h2 id="references">References</h2>
+<ul>
+<li>(1) A Research Agenda: Dynamic Models to Defend Against Correlated Attacks - Ian Goodfellow, 2019</li>
+</ul>
+
+    </div>
+  </article>
+
+  
+
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>
+            <a href="/index.xml" type="application/rss+xml" target="_blank">RSS feed</a>
+          </li>
+          <li>
+            <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img src="/images/hugo-logo.png" alt="Img link to Hugo website" width="22" height="22"></a>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+    
+
+    
+
+    
+  </body>
+</html>
+
