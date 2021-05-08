@@ -90,10 +90,7 @@
 1. Compute gradients and set it to <span class="math inline">\(g\)</span>.<br />
 3. Apply update: <span class="math inline">\(\theta \leftarrow \theta - \epsilon g\)</span></p>
 <p>Below is the update steps with a fixed learning rate:</p>
-<div class="figure">
-<img src="https://ikocabiyik.com/media/blog_media/optimizers-visualized/sgd.gif" alt="" />
-<p class="caption">SGD</p>
-</div>
+<p><img src="images/sgd.gif" /></p>
 <p>One way of making the learning faster is Decaying the Learning Rate:</p>
 <p><strong>Implementation:</strong></p>
 <ul>
@@ -104,10 +101,7 @@
 <li><p><span class="math inline">\(\epsilon_{\tau}\)</span> is generally set to 1 % of the initial learning rate (<span class="math inline">\(\epsilon_0\)</span>).</p></li>
 </ul>
 <p>Below animation is the update steps with a decaying learning rate applied. The initial learning rate is set to a higher value than the one in the previous example, but it is decayed after some iteration.</p>
-<div class="figure">
-<img src="https://ikocabiyik.com/media/blog_media/optimizers-visualized/sgd-with-lr-decay.gif" alt="" />
-<p class="caption">SGD with Decaying Learning Rate</p>
-</div>
+<p><img src="images/sgd-with-lr-decay.gif" /></p>
 </div>
 <div id="momentum" class="section level3">
 <h3>Momentum</h3>
@@ -129,10 +123,7 @@ ration. a hyperparameter.<br />
 2. Compute velocity update as <span class="math inline">\(v \leftarrow \alpha v − \epsilon g\)</span><br />
 3. Apply update: <span class="math inline">\(\theta \leftarrow \theta + v\)</span></p>
 <p>Here is an animation in a 3D surface:</p>
-<div class="figure">
-<img src="https://ikocabiyik.com/media/blog_media/optimizers-visualized/sgd-with-momentum.gif" alt="" />
-<p class="caption">Momentum Animation</p>
-</div>
+<p><img src="images/sgd-with-momentum.gif" /></p>
 <p>The problem of oscillations:<br />
 Applying momentum can result in too</p>
 <p>oscillations. As you can see in the above illustrations, there many U-turns and spirals around local/global minimum points. Nesterov Momentum is reducing those oscillations.</p>
@@ -158,10 +149,7 @@ In the Nesterov Momentum, gradients are evaluated after the current velocity is 
 4. Apply update: <span class="math inline">\(\theta \leftarrow \theta + v\)</span></p>
 <p>Below is a visualization of the standard momentum (black) vs Nesterov momentum (red).<br />
 The Nesterov Momentum is not oscilating much comparing to the standard Momentum algorithm.</p>
-<div class="figure">
-<img src="https://ikocabiyik.com/media/blog_media/optimizers-visualized/momentum-vs-nesterov-momentum.gif" alt="" />
-<p class="caption">Momentum vs Nesterov Momentum Comparison Animation</p>
-</div>
+<p><img src="images/momentum-vs-nesterov-momentum.gif" /></p>
 </div>
 </div>
 <div id="optimizers-with-adaptive-learning-rates" class="section level2">
@@ -215,10 +203,7 @@ The next algorithm, RMSProp will handle this issue.</p>
 2. Accumulate squared gradient: <span class="math inline">\(r \leftarrow \rho r+(1-\rho) g \odot g\)</span><br />
 3. Compute parameter update: <span class="math inline">\(\Delta \boldsymbol{\theta}=-\frac{\epsilon}{\sqrt{\delta+\boldsymbol{r}}} \odot \boldsymbol{g}\)</span><br />
 4. Apply Update: <span class="math inline">\(\boldsymbol{\theta} \leftarrow \boldsymbol{\theta}+\Delta \boldsymbol{\theta}\)</span></p>
-<div class="figure">
-<img src="https://ikocabiyik.com/media/blog_media/optimizers-visualized/adagrad-vs-rmsprop.gif" alt="" />
-<p class="caption">AdaGrad vs RMSProp</p>
-</div>
+<p><img src="images/adagrad-vs-rmsprop.gif" /></p>
 </div>
 <div id="adam" class="section level3">
 <h3>Adam</h3>
@@ -245,10 +230,7 @@ The next algorithm, RMSProp will handle this issue.</p>
 7. Compute Update: <span class="math inline">\(\Delta \boldsymbol{\theta}=-\epsilon \frac{\hat{\boldsymbol{s}}}{\sqrt{\hat{\boldsymbol{r}}}+\delta}\)</span><br />
 8. Apply Update: <span class="math inline">\(\boldsymbol{\theta} \leftarrow \boldsymbol{\theta}+\Delta \boldsymbol{\theta}\)</span></p>
 <p>Here is an animation. Moving like a snake:</p>
-<div class="figure">
-<img src="https://ikocabiyik.com/media/blog_media/optimizers-visualized/adam.gif" alt="" />
-<p class="caption">Adam</p>
-</div>
+<p><img src="images/adam.gif" /></p>
 </div>
 </div>
 
