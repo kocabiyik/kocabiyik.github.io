@@ -129,7 +129,7 @@ Plot <code>speed</code> on x axis and <code>dist</code> (distance to stop) on y 
 <pre class="r"><code>library(ggplot2)
 ggplot(cars, aes(x = speed, y = dist))+
   geom_point()</code></pre>
-<p><img src="/deep-learning/2021-05-07-gradient-descent-visualization-with-ggplot2/index_files/figure-html/cars-scatterplot-1.png" width="672" /></p>
+<p><img src="/deep-learning/linear-regression-with-gradient-descent/index_files/figure-html/cars-scatterplot-1.png" width="672" /></p>
 <p>Add some models to represent the relationship between <code>speed</code> and <code>dist</code>.<br />
 For simplicity, set <span class="math inline">\(\theta_0 = 0\)</span>.</p>
 <pre class="r"><code>library(ggplot2)
@@ -156,7 +156,7 @@ sim1 %&gt;% ggplot(aes(x = x, y = y))+
   geom_segment(aes(x = x, xend = x,
                    y = prediction, yend = y), alpha = 0.3) +
   facet_grid(.~model_no)</code></pre>
-<p><img src="/deep-learning/2021-05-07-gradient-descent-visualization-with-ggplot2/index_files/figure-html/linear-models-1.png" width="864" /></p>
+<p><img src="/deep-learning/linear-regression-with-gradient-descent/index_files/figure-html/linear-models-1.png" width="864" /></p>
 <p>Now visualize cost function:</p>
 <pre class="r"><code># sum of squared errors
 sse &lt;- sim1 %&gt;% 
@@ -168,7 +168,7 @@ sse &lt;- sim1 %&gt;%
 <pre class="r"><code>sse %&gt;% ggplot(aes(x = theta1, y = cost)) +
   geom_point(color = &quot;blue&quot;) +
   geom_text(aes(label = model_no), angle = 0, nudge_y = 20, size = 3)</code></pre>
-<p><img src="/deep-learning/2021-05-07-gradient-descent-visualization-with-ggplot2/index_files/figure-html/lienar-regression-cost-function-1.png" width="672" /></p>
+<p><img src="/deep-learning/linear-regression-with-gradient-descent/index_files/figure-html/lienar-regression-cost-function-1.png" width="672" /></p>
 <p>It looks like a parabola. The model 5 is looks better comparing to other alternatives.</p>
 <p>How to find the best one? There might be other solutions but the objective of this example is understanding <em>learning</em>. So let’s go with <strong>Gradient Descent</strong>.</p>
 </div>
@@ -229,10 +229,10 @@ ggplot(df, aes(x, y)) +
   stat_function(fun = cost_function, alpha = 0.5) +
   xlim(c(-1, 5)) +
   ggtitle(label = &quot;Gradient Descent Visualization&quot;, subtitle = &quot;Learning rate : 0.2&quot;)</code></pre>
-<p><img src="/deep-learning/2021-05-07-gradient-descent-visualization-with-ggplot2/index_files/figure-html/gradient-descent-small-learning-rate-1.png" width="672" /></p>
+<p><img src="/deep-learning/linear-regression-with-gradient-descent/index_files/figure-html/gradient-descent-small-learning-rate-1.png" width="672" /></p>
 <p>In this example the learning rate was 0.2.</p>
 <p>Another example with a higher learning rate: 0.9 :</p>
-<p><img src="/deep-learning/2021-05-07-gradient-descent-visualization-with-ggplot2/index_files/figure-html/gradient-descent-high-learning-rate-1.png" width="672" /></p>
+<p><img src="/deep-learning/linear-regression-with-gradient-descent/index_files/figure-html/gradient-descent-high-learning-rate-1.png" width="672" /></p>
 </div>
 </div>
 <div id="finding-parameters-with-gradient-descent" class="section level2">
@@ -263,12 +263,12 @@ theta1</code></pre>
 <pre class="r"><code>cars %&gt;% ggplot(aes(speed, dist))+
                 geom_point()+
                 geom_abline(slope = theta1, intercept = 0)</code></pre>
-<p><img src="/deep-learning/2021-05-07-gradient-descent-visualization-with-ggplot2/index_files/figure-html/linear-line-1.png" width="672" /></p>
+<p><img src="/deep-learning/linear-regression-with-gradient-descent/index_files/figure-html/linear-line-1.png" width="672" /></p>
 <p>Check the cost function:</p>
 <pre class="r"><code>df %&gt;% ggplot(aes(x = iteration, y = cost))+
   geom_line()+
   geom_point()</code></pre>
-<p><img src="/deep-learning/2021-05-07-gradient-descent-visualization-with-ggplot2/index_files/figure-html/cost-function-iteration-1.png" width="672" /></p>
+<p><img src="/deep-learning/linear-regression-with-gradient-descent/index_files/figure-html/cost-function-iteration-1.png" width="672" /></p>
 </div>
 <div id="references" class="section level2">
 <h2>References</h2>
