@@ -6,7 +6,19 @@
     <description>Recent content in Deep-learnings on A Hugo website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 07 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="/deep-learning/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 08 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="/deep-learning/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mimicking an Art Technique with GANs</title>
+      <link>/deep-learning/replicating-loomis-method-with-gan-models/</link>
+      <pubDate>Sat, 08 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/deep-learning/replicating-loomis-method-with-gan-models/</guid>
+      <description>I recently learned one art technique for drawing heads. This technique is called Loomis Method. It is taught by Andrew Loomis in his book, Drawing the Head &amp;amp; Hands.
+Anyway, a picture is worth a thousand words. Here is one of my drawings with the Loomis method (Elif):
+Loomis Method
+ 0. Objective Apart from learning this art technique, I wanted to develop a machine learning model to transform a photo into a Loomis head drawing (and the other way around).</description>
+    </item>
+    
     <item>
       <title>GANs with the Language of Game Theory</title>
       <link>/deep-learning/gan-review/</link>
