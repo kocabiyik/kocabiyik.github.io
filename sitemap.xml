@@ -3,24 +3,27 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>/categories/</loc>
-    <lastmod>2021-05-08T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/categories/deep-learning/</loc>
-    <lastmod>2021-05-08T00:00:00+00:00</lastmod>
+    <lastmod>2021-06-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/deep-learning/</loc>
-    <lastmod>2021-05-08T00:00:00+00:00</lastmod>
+    <lastmod>2021-06-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/deep-learning/experiment-tracking-practices-in-ml/</loc>
+    <lastmod>2021-06-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/</loc>
+    <lastmod>2021-06-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/categories/machine-learning/</loc>
+    <lastmod>2021-06-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/categories/deep-learning/</loc>
     <lastmod>2021-05-08T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/deep-learning/replicating-loomis-method-with-gan-models/</loc>
     <lastmod>2021-05-08T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/deep-learning/gan-review/</loc>
-    <lastmod>2021-05-07T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/categories/machine-learning/</loc>
     <lastmod>2021-05-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tags/plot/</loc>

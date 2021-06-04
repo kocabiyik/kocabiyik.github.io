@@ -6,7 +6,18 @@
     <description>Recent content on Imran Kocabiyik - Personal Website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 08 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 03 Jun 2021 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Experiment Tracking Practices in ML</title>
+      <link>/deep-learning/experiment-tracking-practices-in-ml/</link>
+      <pubDate>Thu, 03 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/deep-learning/experiment-tracking-practices-in-ml/</guid>
+      <description>If you build machine learning model for practical applications, it would be a good strategy to try different strategies until you get a good enough model. One of the most useful practice is tracking your experiments.
+Why Keeping a Experiment Records? You may need to:
+ reproduce a similar model. remember the hyperparameters you set. analyze different experiments. etc.  What to record? It is the data about the training process.</description>
+    </item>
+    
     <item>
       <title>Mimicking an Art Technique with GANs</title>
       <link>/deep-learning/replicating-loomis-method-with-gan-models/</link>
