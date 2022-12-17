@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+
+/* Language: css */
+/* Path: css/main.css */
+
+p {
+  font-family: 'Merriweather', serif;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color: #333;
+}
